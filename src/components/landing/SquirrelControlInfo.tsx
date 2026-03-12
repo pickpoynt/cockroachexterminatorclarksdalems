@@ -32,64 +32,68 @@ const SquirrelControlInfo = () => {
     return (
         <section className="py-24 bg-white relative overflow-hidden" id="faq">
             <div className="container mx-auto px-4 relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-                    <div className="space-y-8 animate-fade-in">
-                        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 text-amber-700 text-[10px] font-bold uppercase tracking-widest border border-amber-100">
-                            <ShieldCheck className="w-4 h-4" />
-                            <span>Expert Knowledge Base</span>
-                        </div>
+                <div className="max-w-3xl mb-16 text-center mx-auto">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-50 text-amber-700 text-[10px] font-bold uppercase tracking-widest border border-amber-100 mb-6">
+                        <ShieldCheck className="w-4 h-4" />
+                        <span>Expert Knowledge Base</span>
+                    </div>
 
-                        <h2 className="text-4xl md:text-5xl font-heading font-bold text-slate-900 leading-tight">
-                            Fruitland Squirrel Control <br />
-                            <span className="text-amber-600">Common Questions</span>
-                        </h2>
+                    <h2 className="text-4xl md:text-5xl font-heading font-bold text-slate-900 leading-tight">
+                        Fruitland Squirrel Control <br />
+                        <span className="text-amber-600">Common Questions</span>
+                    </h2>
+                </div>
 
-                        <div className="grid grid-cols-1 gap-4">
-                            {faqs.map((faq, index) => (
-                                <div key={index} className="p-6 rounded-2xl bg-slate-50 border border-slate-100 hover:border-amber-200 transition-all group">
-                                    <div className="flex gap-4">
-                                        <div className="w-10 h-10 rounded-xl bg-white flex items-center justify-center shrink-0 border border-slate-100 group-hover:bg-amber-500 group-hover:border-amber-500 transition-colors">
-                                            <HelpCircle className="w-5 h-5 text-amber-600 group-hover:text-white transition-colors" />
-                                        </div>
-                                        <div>
-                                            <h4 className="text-lg font-bold text-slate-900 mb-2">{faq.q}</h4>
-                                            <p className="text-slate-600 leading-relaxed font-medium italic">{faq.a}</p>
-                                        </div>
-                                    </div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-24">
+                    {faqs.map((faq, index) => (
+                        <div key={index} className="p-8 rounded-[2.5rem] bg-slate-50 border border-slate-100 hover:border-amber-200 transition-all group hover:shadow-2xl hover:shadow-amber-900/5">
+                            <div className="flex gap-6">
+                                <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center shrink-0 border border-slate-100 group-hover:bg-amber-500 group-hover:border-amber-500 transition-colors shadow-sm">
+                                    <HelpCircle className="w-6 h-6 text-amber-600 group-hover:text-white transition-colors" />
                                 </div>
-                            ))}
+                                <div className="flex-1">
+                                    <h4 className="text-xl font-bold text-slate-900 mb-3">{faq.q}</h4>
+                                    <p className="text-slate-600 leading-relaxed font-medium italic">{faq.a}</p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pt-24 border-t border-slate-100">
+                    <div className="relative rounded-[3rem] overflow-hidden shadow-2xl group">
+                        <img src="/1.jpeg" alt="Squirrel Inspection" className="w-full object-cover aspect-[4/3] transition-transform duration-700 group-hover:scale-110" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-slate-900/20 to-transparent" />
+                        <div className="absolute bottom-8 left-8 right-8">
+                            <div className="p-8 rounded-3xl bg-white/10 backdrop-blur-xl border border-white/20 shadow-2xl">
+                                <p className="text-white font-bold italic text-xl leading-relaxed">
+                                    "Proper exclusion is the only permanent solution to squirrel infestations. We don't just remove the problem; we ensure it doesn't come back."
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="lg:sticky lg:top-32 space-y-8 animate-fade-in-delay-1">
-                        <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                            <img src="/1.jpeg" alt="Squirrel Inspection" className="w-full object-cover aspect-[4/5]" />
-                            <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent" />
-                            <div className="absolute bottom-8 left-8 right-8">
-                                <div className="p-6 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20">
-                                    <p className="text-white font-bold italic text-lg leading-relaxed">
-                                        "Proper exclusion is the only permanent solution to squirrel infestations. We don't just remove the problem; we ensure it doesn't come back."
-                                    </p>
+                    <div className="space-y-12">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div className="p-8 rounded-[2.5rem] bg-white border border-slate-100 shadow-xl hover:shadow-2xl transition-all group">
+                                <div className="w-14 h-14 rounded-2xl bg-amber-500 flex items-center justify-center mb-6 shadow-lg shadow-amber-500/30">
+                                    <Target className="w-7 h-7 text-white" />
                                 </div>
+                                <h3 className="text-2xl font-bold text-slate-900 mb-4 uppercase tracking-tight">Precision Trapping</h3>
+                                <p className="text-slate-500 text-sm leading-relaxed uppercase tracking-widest font-bold">Safe, humane, and effective removal techniques tailored for MD homes.</p>
                             </div>
-                        </div>
-
-                        <div className="grid grid-cols-2 gap-4">
-                            <div className="p-8 rounded-3xl bg-slate-900 text-white">
-                                <Target className="w-10 h-10 text-amber-500 mb-6" />
-                                <h3 className="text-2xl font-bold mb-4 uppercase tracking-tight">Precision Trapping</h3>
-                                <p className="text-slate-400 text-sm leading-relaxed uppercase tracking-widest font-bold">Safe, humane, and effective removal techniques tailored for MD homes.</p>
-                            </div>
-                            <div className="p-8 rounded-3xl bg-amber-600 text-white">
-                                <ShieldCheck className="w-10 h-10 text-white mb-6" />
+                            <div className="p-8 rounded-[2.5rem] bg-amber-600 text-white shadow-xl shadow-amber-600/30 hover:shadow-2xl transition-all">
+                                <div className="w-14 h-14 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center mb-6 border border-white/30">
+                                    <ShieldCheck className="w-7 h-7 text-white" />
+                                </div>
                                 <h3 className="text-2xl font-bold mb-4 uppercase tracking-tight">Entry Exclusion</h3>
-                                <p className="text-white/80 text-sm leading-relaxed uppercase tracking-widest font-bold">We bridge the gap between your home and local wildlife by sealing every entry point.</p>
+                                <p className="text-white/90 text-sm leading-relaxed uppercase tracking-widest font-bold">We bridge the gap between your home and local wildlife by sealing every entry point.</p>
                             </div>
                         </div>
 
-                        <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                            <img src="/3.jpeg" alt="Squirrel Control Service" className="w-full object-cover aspect-video" />
-                            <div className="absolute top-4 right-4 px-4 py-2 rounded-full bg-amber-500 text-white text-[10px] font-bold uppercase tracking-widest animate-pulse">
+                        <div className="relative rounded-[3rem] overflow-hidden shadow-2xl group border-4 border-amber-500/10">
+                            <img src="/3.jpeg" alt="Squirrel Control Service" className="w-full object-cover aspect-video transition-transform duration-700 group-hover:scale-110" />
+                            <div className="absolute top-6 right-6 px-6 py-2 rounded-full bg-amber-500 text-white text-[10px] font-bold uppercase tracking-widest animate-pulse border border-white/20 shadow-lg">
                                 Fruitland Specialist
                             </div>
                         </div>
