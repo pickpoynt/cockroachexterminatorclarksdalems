@@ -2,28 +2,28 @@ import { ArrowRight, ShieldCheck } from "lucide-react";
 
 const services = [
   {
-    title: "Household Flea Removal",
-    description: "Multi-stage interior treatments targeting flea larvae, eggs, and adults in carpets, upholstery, and hard-to-reach crevices throughout your North Brooksville home.",
+    title: "Roach Extermination",
+    description: "Full-property cockroach elimination using gel baits, residual insecticides, and crack-and-crevice applications targeting every nesting site in your Clarksdale home.",
     image: "/2.jpeg",
-    points: ["Safe for Pets", "Long-term Residuals", "Total Eradication"]
+    points: ["Gel Bait Systems", "Residual Treatment", "Total Elimination"]
   },
   {
-    title: "Yard & Perimeter Shield",
-    description: "Protective outdoor boundaries that stop flea migration from neighboring properties and local wildlife, creating a safe outdoor zone for your family and pets.",
+    title: "Nest & Source Elimination",
+    description: "Precision identification and destruction of cockroach nesting sites — including wall voids, under appliances, and in crawl spaces — to stop reproduction at the source.",
     image: "/3.jpeg",
-    points: ["Turf Protection", "Perimeter Barriers", "Eco-Friendly Options"]
+    points: ["Nest Destruction", "Void Treatment", "Source Removal"]
   },
   {
-    title: "Pet-Safe IGR Treatment",
-    description: "Insect growth regulator applications that sterilize flea eggs and prevent larvae from maturing — breaking the flea life cycle permanently in your home.",
+    title: "German Roach Control",
+    description: "Specialized protocols targeting the most prolific indoor roach species, deploying IGR products and multiple-bait rotation strategies to prevent resistance development.",
     image: "/1.jpeg",
-    points: ["Breaks Life Cycle", "Pet Safe", "Months of Protection"]
+    points: ["IGR Treatment", "Bait Rotation", "Resistance Prevention"]
   },
   {
-    title: "Follow-Up & Prevention",
-    description: "Scheduled 14-21 day return visits to eliminate any newly hatched pupae and confirm total eradication — with optional ongoing prevention plans.",
+    title: "Prevention & Sealing",
+    description: "Post-elimination exclusion services including entry point sealing, sanitation recommendations, and ongoing monitoring to prevent future cockroach re-entry.",
     image: "/4.jpeg",
-    points: ["Guaranteed Results", "Ongoing Plans", "No Recurring Fleas"]
+    points: ["Entry Point Sealing", "Monitoring Plans", "Sanitation Advice"]
   }
 ];
 
@@ -33,10 +33,10 @@ const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-slate-900 mb-6 uppercase tracking-tight">
-            Professional <span className="text-amber-600">Flea Control North Brooksville</span>
+            Professional <span className="text-amber-600">Cockroach Exterminator Clarksdale MS</span>
           </h2>
           <p className="text-xl text-slate-600 font-medium italic">
-            North Brooksville homeowners trust our specialized team for precision flea lifecycle elimination and total property protection. We target every stage.
+            Clarksdale homeowners trust our certified team for rapid cockroach lifecycle elimination and total property protection. We target every life stage and every hiding spot.
           </p>
         </div>
 
@@ -45,11 +45,7 @@ const Services = () => {
             <div key={index} className="group rounded-3xl bg-slate-50 border border-slate-100 hover:bg-white hover:shadow-2xl hover:shadow-amber-500/10 hover:-translate-y-1 transition-all duration-300 overflow-hidden">
               <a href="#contact">
                 <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110"
-                  />
+                  <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-all duration-700 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-900/60 to-transparent" />
                 </div>
                 <div className="p-6">
@@ -58,8 +54,7 @@ const Services = () => {
                   <ul className="space-y-1 mb-4">
                     {service.points.map((pt) => (
                       <li key={pt} className="flex items-center gap-2 text-xs font-bold text-slate-500 uppercase tracking-widest">
-                        <ShieldCheck className="w-3 h-3 text-amber-500 shrink-0" />
-                        {pt}
+                        <ShieldCheck className="w-3 h-3 text-amber-500 shrink-0" />{pt}
                       </li>
                     ))}
                   </ul>

@@ -2,7 +2,7 @@ import Header from "@/components/landing/Header";
 import Hero from "@/components/landing/Hero";
 import Services from "@/components/landing/Services";
 import WhyUs from "@/components/landing/WhyUs";
-import FleaControlInfo from "@/components/landing/FleaControlInfo";
+import CockroachInfo from "@/components/landing/CockroachInfo";
 import Contact from "@/components/landing/Contact";
 import Footer from "@/components/landing/Footer";
 import RandomLinks from "@/components/landing/RandomLinks";
@@ -10,11 +10,11 @@ import FloatingCallButton from "@/components/ui/FloatingCallButton";
 import { Helmet } from "react-helmet-async";
 
 const Index = () => {
-  const firmName = "North Brooksville Flea Control Experts";
+  const firmName = "Clarksdale MS Cockroach Exterminator Experts";
   const phoneNumber = "(323) 880-1224";
-  const location = "North Brooksville, FL";
-  const zipCodes = "34601, 34604, 34606, 34613, 34614";
-  const fullKeyword = "Flea control north brooksville";
+  const location = "Clarksdale, MS";
+  const zipCodes = "38614, 38617, 38633, 38618, 38677, 38606";
+  const fullKeyword = "cockroach exterminator Clarksdale MS 38614";
 
   const schemaData = {
     "@context": "https://schema.org",
@@ -26,16 +26,16 @@ const Index = () => {
     "telephone": "3238801224",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "North Brooksville",
-      "addressLocality": "North Brooksville",
-      "addressRegion": "FL",
-      "postalCode": "34601",
+      "streetAddress": "Clarksdale",
+      "addressLocality": "Clarksdale",
+      "addressRegion": "MS",
+      "postalCode": "38614",
       "addressCountry": "US"
     },
     "geo": {
       "@type": "GeoCoordinates",
-      "latitude": 28.5700,
-      "longitude": -82.4002
+      "latitude": 34.1998,
+      "longitude": -90.5723
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -54,22 +54,23 @@ const Index = () => {
       "name": firmName
     },
     "areaServed": [
-      { "@type": "City", "name": "North Brooksville, FL" },
-      { "@type": "PostalCode", "name": "34601" },
-      { "@type": "PostalCode", "name": "34604" },
-      { "@type": "PostalCode", "name": "34606" },
-      { "@type": "PostalCode", "name": "34613" },
-      { "@type": "PostalCode", "name": "34614" }
+      { "@type": "City", "name": "Clarksdale, MS" },
+      { "@type": "PostalCode", "name": "38614" },
+      { "@type": "PostalCode", "name": "38617" },
+      { "@type": "PostalCode", "name": "38633" },
+      { "@type": "PostalCode", "name": "38618" },
+      { "@type": "PostalCode", "name": "38677" },
+      { "@type": "PostalCode", "name": "38606" }
     ],
-    "description": `Professional ${fullKeyword}. Expert flea elimination and pet-safe treatments in North Brooksville FL ${zipCodes}.`
+    "description": `Professional ${fullKeyword}. Expert roach gel bait, IGR, and residual treatment in ${location} ${zipCodes}.`
   };
 
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>{`${fullKeyword} | ${firmName} | ${phoneNumber}`}</title>
-        <meta name="description" content={`Expert ${fullKeyword}. We provide 24/7 pest control, pet-safe flea treatments, and yard perimeter protection in ${location}. Call ${phoneNumber} now for rapid flea elimination.`} />
-        <meta name="keywords" content={`${fullKeyword}, flea exterminator North Brooksville, flea treatment Brooksville FL, pest control 34601, flea removal Hernando County`} />
+        <title>{`${fullKeyword} | ${firmName} | ${phoneNumber} | ZIP: ${zipCodes}`}</title>
+        <meta name="description" content={`Expert ${fullKeyword}. Certified cockroach gel bait, residual, and IGR elimination in ${location}. Call ${phoneNumber} now for 24/7 rapid dispatch. Serving ZIP codes ${zipCodes}.`} />
+        <meta name="keywords" content={`${fullKeyword}, cockroach exterminator Coahoma County MS, roach control Clarksdale 38614, German roach exterminator Mississippi, pest control Clarksdale MS`} />
         <link rel="canonical" href="https://fleacontrolnorthbrooksville.vercel.app/" />
         <script type="application/ld+json">{JSON.stringify(schemaData)}</script>
         <script type="application/ld+json">{JSON.stringify(serviceSchema)}</script>
@@ -80,19 +81,19 @@ const Index = () => {
         <Hero
           title={
             <>
-              Flea Control <br />
-              <span className="text-[#FFD700] drop-shadow-sm uppercase tracking-tighter">North Brooksville</span>
+              Cockroach Exterminator <br />
+              <span className="text-[#FFD700] drop-shadow-sm uppercase tracking-tighter">Clarksdale MS</span>
             </>
           }
-          subtitle="North Brooksville's specialized flea eradication experts. We provide laboratory-grade treatments and total infestation removal to protect your pets and property — 24/7."
+          subtitle="Clarksdale MS's certified cockroach elimination specialists. We deploy gel bait, residual insecticides, and IGR protocols to completely eradicate infestations — protecting your family and your home — 24/7."
           image="/4.jpeg"
           overlayImage="/1.jpeg"
-          badge="NORTH BROOKSVILLE FLEA EXPERTS"
+          badge="CLARKSDALE MS ROACH EXPERTS"
           phone="3238801224"
         />
         <Services />
         <WhyUs />
-        <FleaControlInfo />
+        <CockroachInfo />
         <Contact />
       </main>
       <RandomLinks />
