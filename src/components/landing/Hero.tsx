@@ -14,19 +14,19 @@ interface HeroProps {
 const Hero = ({
   title = (
     <>
-      Cockroach Exterminator <br />
-      <span className="text-[#FFD700] drop-shadow-sm uppercase tracking-tighter">Clarksdale MS</span>
+      Flea Control <br />
+      <span className="text-[#FFD700] drop-shadow-sm uppercase tracking-tighter">North Brooksville</span>
     </>
   ),
-  subtitle = "Clarksdale MS's certified cockroach elimination specialists. We deploy gel bait, residual insecticides, and IGR protocols to completely eradicate infestations — protecting your family and your home — 24/7.",
+  subtitle = "North Brooksville's specialized flea eradication experts. We provide laboratory-grade treatments and total infestation removal to protect your pets and property — 24/7.",
   image = "/4.jpeg",
   overlayImage = "/1.jpeg",
   phone = "3238801224",
-  badge = "CLARKSDALE MS ROACH EXPERTS",
+  badge = "NORTH BROOKSVILLE FLEA EXPERTS",
   features = [
-    { icon: Search, text: "Roach Inspection" },
-    { icon: ShieldCheck, text: "Gel Bait System" },
-    { icon: Locate, text: "Clarksdale MS Local" }
+    { icon: Search, text: "Sewer Diagnostic" },
+    { icon: ShieldCheck, text: "Trenchless Repair" },
+    { icon: Locate, text: "Chino Hills Local" }
   ]
 }: HeroProps) => {
   const formattedPhone = phone.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3");

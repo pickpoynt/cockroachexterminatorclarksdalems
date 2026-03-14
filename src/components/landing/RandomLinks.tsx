@@ -1,8 +1,8 @@
 const links = [
-  { text: "Pest Control Baton Rouge", url: "https://pestcontrolbatonrouge.vercel.app/" },
-  { text: "Brown Recluse Spider Control LaGrange", url: "https://brownreclusespidercontrollagrange.vercel.app/" },
-  { text: "Wildlife Removal Gastonia NC", url: "https://wildliferemovalgastonianc.vercel.app/" },
-  { text: "Smoke Odor Removal Nashville", url: "https://smokeodorremovalnashville.vercel.app/" },
+  { text: "Chipmunk Removal Brooksville FL", url: "https://chipmunkremovalbrooksvillefl.vercel.app/" },
+  { text: "No Tent Termite Treatment Brooksville FL", url: "https://notenttermitetreatmentbrooksvillefl.vercel.app/" },
+  { text: "Emergency Wasp Removal Brooksville FL", url: "https://emergencywaspremovalbrooksvillefl.vercel.app/" },
+  { text: "Tick Control Service Brooksville FL", url: "https://tickcontrolservicebrooksvillefl.vercel.app/" },
 ];
 
 const RandomLinks = () => {
